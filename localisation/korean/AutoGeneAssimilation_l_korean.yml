@@ -1,0 +1,51 @@
+﻿l_korean:
+ 
+ # By steam user: HongSamMild
+
+ ########################################
+ ########################################
+ #####                              #####
+ #####    Auto Gene Assimilation    #####
+ #####                              #####
+ #####    localisations             #####
+ #####                              #####
+ ########################################
+ ########################################
+ 
+ 
+ 
+ ###########################
+ ###  Edicts, Modifiers  ###
+ ###########################
+ 
+ ### Policies
+ policy_AgaPolicyGeneAssimilation:0 "유전자 동화"
+ policy_AgaPolicyGeneAssimilation_desc:0 "생물 다양성은 제국 성장에는 도움이 될 지 모르나, 경제 최적화를 저해할 수 있습니다. 우리는 아종들을 동화할지 생물 다양성을 보전할지 선택할 수 있습니다.\n"
+ AgaPolicyGeneAssimilationForbidden:0 "실행하지 않음"
+ AgaPolicyGeneAssimilationForbidden_name:1 "$AgaPolicyGeneAssimilationForbidden$"
+ AgaPolicyGeneAssimilationForbidden_desc:0 "생물 다양성을 보호하기 위해 유전자 동화 정책을 실행하지 않습니다."
+ AgaPolicyGeneAssimilationAllowed:0 "부분적 실행"
+ AgaFlagGeneAssimilationAllowed_name:1 "$AgaPolicyGeneAssimilationAllowed$"
+ AgaPolicyGeneAssimilationAllowed_desc:0 "모든 아종을 해당 종족 그룹 중에서 마지막으로 변경된 한 아종에 통합합니다. 그러나, 해당 종족 카테고리에서 최소한 한 번은 수동으로 변경이 일어나지 않으면 해당 팝들의 동화는 시작되지 않을 것입니다.\n\n$AgaPolicyGeneAssimilationEffectDesc$"
+ AgaPolicyGeneAssimilationForced:0 "완전 실행"
+ AgaFlagGeneAssimilationForced_name:1 "$AgaPolicyGeneAssimilationForced$"
+ AgaPolicyGeneAssimilationForced_desc:0 "종족 그룹 중에서 마지막으로 변경된 아종으로 모든 아종을 통합합니다. 만일 해당 종족의 카테고리에서 수동으로 변경된 종족이 하나도 없었다면, 팝들은 가장 숫자가 많은 종류의 아종으로 자동 통합될 것입니다.\n\n$AgaPolicyGeneAssimilationEffectDesc$"
+ 
+ AgaPolicyGeneAssimilationFailText:0 "\n\n£trigger_no£ §R월별 £society_research£ $society_research$ 는 최소한 100이 되어야 합니다.§!"
+ AgaPolicyGeneAssimilationEffectDesc:0 "§H정책이 실행되면 자동으로 동화가 시작될 것입니다.§! (최대 1개월당 3 £pops£ $팝$)"
+ 
+ ### Country Modifiers
+ AgaModifierGeneAssimilated_0a:0 "유전자 동화가 완료되었습니다"
+ AgaModifierGeneAssimilated_0b:0 "유전자 동화를 위한 $society_research$ 부족"
+ AgaModifierGeneAssimilated_1:0 "유전자 동화 진행 중"
+ AgaModifierGeneAssimilated_2:1 "$AgaModifierGeneAssimilated_1$"
+ AgaModifierGeneAssimilated_3:1 "$AgaModifierGeneAssimilated_1$"
+ 
+ AgaModifierGeneAssimilated_0a_desc:0 "유전자 동화가 완료되었으며, 현재 유보 중입니다. 동화는 대상이 될 팝들이 이주해 오거나 새로 생성되면 계속될 것입니다."
+ AgaModifierGeneAssimilated_0b_desc:0 "§R유전자 동화는 £society_research£ $society_research$.의 부족으로 중지되었습니다.§!"
+ AgaModifierGeneAssimilated_x_desc:0 "아종의 유전자가 동화 중입니다."
+ AgaModifierGeneAssimilated_1_desc:0 "$AgaModifierGeneAssimilated_x_desc$\n(1개월당 1 £pops£ $팝$)"
+ AgaModifierGeneAssimilated_2_desc:0 "$AgaModifierGeneAssimilated_x_desc$\n(1개월당 2 £pops£ $팝$)"
+ AgaModifierGeneAssimilated_3_desc:0 "$AgaModifierGeneAssimilated_x_desc$\n(1개월당 3 £pops£ $팝$)"
+ 
+ mod_country_base_society_research_produces_add:0 "$mod_country_society_research_produces_mult$"
